@@ -14,7 +14,7 @@ const thoughtController = {
       });
   },
 
-  // Get single thought by id
+  // Get thought by id
   getSingleThought(req, res) {
     Thought.findOne({ _id: req.params.thoughtId })
       .then((dbThoughtData) => {
